@@ -1,4 +1,5 @@
 # 一个随机点名页面
+[直通车](https://xiaomingtang.github.io/dianming/)
 ## Version
 v1.1
 ## Introduction
