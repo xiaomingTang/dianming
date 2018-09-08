@@ -82,9 +82,11 @@ RollCall.prototype = {
   },
   next: function() {
     var student = this.getCurrentStudent()
-    if(student && $("#mark-as-absent").prop("checked")) {
-      student.isAbsent = true
+    if($("#mark-as-absent").prop("checked")) {
       $("#mark-as-absent").prop("checked", false)
+      if(student) {
+        student.isAbsent = true
+      }
     }
     this.current++
     this.handleIfStoped()
